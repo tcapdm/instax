@@ -35,10 +35,11 @@
 * --------------------------------------------------------------------------
 */
 
-[class^="btn-"] {position: relative; display: block; overflow: hidden; width: 100%; max-width: 200px; margin: 1rem auto; text-transform: uppercase; border: 1px solid #e0e0e0; padding: 10px 0; color: #222; font-family: 'nunito sans', sans-serif; background:transparent; } .btn-6 span {position: absolute; display: block; width: 0; height: 0; border-radius: 50%; -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out; transition: width 0.4s ease-in-out, height 0.4s ease-in-out; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: -1; }
+a[class^="btn-"] {z-index:2;position: relative; display: block; overflow: hidden; width: 100%; max-width: 200px; margin: 1rem auto; text-transform: uppercase; border: 1px solid #e0e0e0; padding: 10px 0; color: #222; font-family: 'nunito sans', sans-serif; background:transparent; } .btn-6 span {position: absolute; display: block; width: 0; height: 0; border-radius: 50%; -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out; transition: width 0.4s ease-in-out, height 0.4s ease-in-out; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: -1;}
 .btn-6:hover span {width: 225%; height: 562.5px; }
 .btn-6:hover {color:#f7f7f7}
 .btn-6:active {background-color: #a5b66d; }
+
 .btn-6.violet {background:rgba(46,49,146,0.3)}
 .btn-6.violet span {background-color: #2e3192;}
 .btn-6.bluee {background:rgba(5,141,189,0.3)}
