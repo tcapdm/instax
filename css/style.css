@@ -249,7 +249,7 @@ input.search-by-location::placeholder {color: #f7f7f7; }
 * --------------------------------------------------------------------------
 */
 
-.footer {background:#323232; padding: 30px 0; position: relative;}
+.footer {background:#323232; position: relative;}
 
 .footer-kuba {cursor:pointer;width: 150px; position: absolute; top: -29px; left: 50%; transform: translateX(-50%)}
 .footer-kuba:before {content: '>'; position: absolute; top: 5px; transform: translateX(-40%) rotateZ(-90deg); left: 48%; font-size: 23px; font-family: monospace;color:#fff}
@@ -339,7 +339,7 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 	.navigation{position: fixed}
 	.find-now-btn {width: 100%;}
 	.promoArea .slick-list {padding: 15px 25px 20px;}
-	.instax-film{position: relative; padding-top: 203px;}
+	.instax-film{position: relative; padding-bottom: 60px;}
 }
 
 @media screen and (max-width: 516px) {
@@ -357,16 +357,32 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 	.featuredProducts .slick-list, .promoProducts .slick-list {padding: 40px 25px 70px;}
 	.promoArea .slick-list {padding: 15px 25px 20px;}
 }
+
+
+/* code updates */
+.instax-film{
+	position: relative;overflow: hidden;
+}
 .showSiteMapButton{
 	display: block;
 	background: none;
 	border: 0;
 	position: absolute;
-	top: -35px;
+	top: -33px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 	width: 198px;
+}
+.hide-contents{
+	display: none
+}
+.footer{
+	height: auto;
+}
+.footer .container{
+	padding: 30px 0;
+	
 }
 .showSiteMapButton:before {
 	content: '>';
@@ -378,6 +394,7 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+	transition: transform 0.5s ease;
 }
 .slick-prev:before, .slick-next:before,
 .slick-prev:after,.slick-prev:before{
@@ -398,4 +415,17 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 
 .slick-next:before {
 	content: ">"!important;
+}
+.instax-film button:focus{
+	background: none;
+}
+.sitemap{
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+
+.showSiteMapButton.active:before {
+	transform: translateX(0%) rotateZ(-90deg);
 }

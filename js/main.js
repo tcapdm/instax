@@ -130,5 +130,10 @@ $(document).ready(function(){
 			relY = e.pageY - parentOffset.top;
 		$(this).find('span').css({top:relY, left:relX})
 	});
+	
+	$(".showSiteMapButton").click(function(){
+		$(this).toggleClass("active");
+		$(".sitemapLink").slideToggle();
+	});
 	/***********************/
 });
