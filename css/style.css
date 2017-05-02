@@ -416,7 +416,7 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 .slick-next:before {
 	content: ">"!important;
 }
-.instax-film button:focus{
+button:focus{
 	background: none;
 }
 .sitemap{
