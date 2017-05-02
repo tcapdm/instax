@@ -78,8 +78,8 @@ header .header-navigation-block{background-color: rgba(255, 255, 255, 0.7); posi
 
 
 main h2{font-family: 'Pacifico', cursive; text-align: center; margin: 2% 0;}
-.featuredProducts {background:url(../images/backgrounds/bg1.jpg)no-repeat center center;background-size:cover;padding:30px 0}
-.featuredProducts ul li .item{position: relative;}
+.featuredProducts,.promoProducts {background:url(../images/backgrounds/bg1.jpg)no-repeat center center;background-size:cover;padding:30px 0}
+.featuredProducts ul li .item, .promoProducts ul li .item{position: relative;}
 .product-frame01 .imgContainer{border: 4px solid #000; position: relative; margin: 0 auto; overflow: hidden;}
 .product-frame01 .imgContainer:after, .product-frame01 .imgContainer:before{border-right: 4px solid #000; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); height: 112px; position: absolute; z-index: 10; content: "";}
 .product-frame01 .imgContainer:before{bottom: 70%; right: 87%;}
@@ -91,7 +91,7 @@ main h2{font-family: 'Pacifico', cursive; text-align: center; margin: 2% 0;}
 .prod-style-2 .custom-bg{right: 20px; bottom: 30px;}
 .prod-style-3 .custom-bg{left: 20px; top: 30px;}
 .prod-style-4 .custom-bg{left: 20px; bottom: 30px;}
-.featuredProducts .slick-list {padding: 65px 25px 120px;}
+.featuredProducts .slick-list,.promoProducts .slick-list{padding: 65px 25px 120px;}
 .promoArea {background:url(../images/backgrounds/bg2.jpg)no-repeat center center;background-size:cover;padding:30px 0}
 .promoArea .slick-list {padding: 55px 25px;}
 .select-wrapper input.select-dropdown{border: 1px solid #dceaf6; color: #dceaf6; padding: 0 16px; box-sizing: border-box;}
@@ -110,7 +110,7 @@ main h2{font-family: 'Pacifico', cursive; text-align: center; margin: 2% 0;}
 .instax-media li{box-sizing: border-box; margin-top: 25px;}
 .cardlayout01{border: 2px solid #000;}
 .instax-media .imgContainer02{margin: 10px; position: relative;}
-.featuredProducts .sectionButton{background-color: #058dbd;}
+.featuredProducts .sectionButton,.promoProducts .sectionButton{background-color: #058dbd;}
 .promoArea .sectionButton{background-color: rgba(46,49,146,0.3);}
 .section-where-to-buy {background: #323232; padding: 15px 0 0 0; position: relative;}
 
@@ -148,7 +148,7 @@ input.search-by-location::placeholder {color: #f7f7f7; }
 
 .media-card-text{position: relative; text-align: center; line-height: 1.5; padding: 5px 15px; font-family: 'Nunito Sans', sans-serif; font-size: 12px; font-weight: 700; margin: 0 auto; color: #1c1c1c; display: block; transform: translateY(50%); border: 0; z-index: 1; text-transform: uppercase;}
 .slick-dots li button:before{content: ""; background-image: url(../images/dots_inactive.png); background-repeat: no-repeat; top: 2px;}
-.slick-dots li.slick-active button:before{content: ""; background-image: url(../images/active.png); background-repeat: no-repeat; top: 0;}
+.slick-dots li.slick-active button:before{content: ""; background-image: url(../images/active.png); background-repeat: no-repeat;}
 .slick-dots{bottom: 0;}
 .section-where-to-buy .row{margin-bottom: 0;}
 .instax-media{margin-top: 60px;}
@@ -164,9 +164,11 @@ input.search-by-location::placeholder {color: #f7f7f7; }
 .showNav .header-navigation-block{top: 0; -webkit-box-shadow: 0px -6px 22px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px -6px 22px 0px rgba(0,0,0,0.75); box-shadow: 0px -6px 22px 0px rgba(0,0,0,0.75);}
 .setRightMost{position: fixed; right: 3%;}
 .whiteBGC{background-color: #fff!important;}
-.slick-next,.slick-prev {bottom: -10px; top: auto; z-index: 10;}
+.slick-next,.slick-prev {bottom: -6px; top: auto; z-index: 10;}
+/*
 .slick-prev {left: 33%;}
 .slick-next  {left: 64%;}
+*/
 .slick-prev:before, .slick-next:before {font-family: 'slick'; font-size: 20px; line-height: 1; /* opacity: .75; */ color: purple; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .events .event-list img{width: 100%;}
 
@@ -322,7 +324,7 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 	header .share{display: table; position: relative; right: 4px; margin: 10px 0 0 0; transition: all 0.5s ease;}
 	.share-text{text-transform: capitalize; transform: rotate(90deg); transform-origin: right top 20px;}
 	.social-media-block-sp{position: fixed; right: 5px; top: 55px; z-index: 98;}
-	.featuredProducts .slick-list {padding: 30px 25px 70px;}
+	.featuredProducts .slick-list ,.promoProducts .slick-list {padding: 30px 25px 70px;}
 	.promoArea .slick-list {padding: 15px 25px 20px;}
 	main h2 {margin: 50px 0 40px;}
 	.where-to-buy-txt span{font-size: 13px;}
@@ -344,15 +346,35 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 @media screen and (max-width: 516px) {
 	.header-qoute{margin: 5px;}
 	header .social-media li{margin-bottom: 5px;}
-	.featuredProducts .prod-style-2 .custom-bg{bottom: 20px;}
-	.featuredProducts .prod-style-4 .custom-bg{bottom: 20px;}
-	.featuredProducts .prod-style-1 .custom-bg{top: 20px;}
-	.featuredProducts .prod-style-2 .custom-bg{top: 20px;}
+	.featuredProducts .prod-style-2 .custom-bg, .promoProducts .prod-style-2 .custom-bg{bottom: 20px;}
+	.featuredProducts .prod-style-4 .custom-bg, .promoProducts .prod-style-4 .custom-bg{bottom: 20px;}
+	.featuredProducts .prod-style-1 .custom-bg, .promoProducts .prod-style-1 .custom-bg{top: 20px;}
+	.featuredProducts .prod-style-2 .custom-bg, .promoProducts .prod-style-2 .custom-bg{top: 20px;}
 }
 
 @media screen and (max-width: 400px){
 	h2{font-size: 2rem;}
 	main h2 {margin: 30px 0 0px;}
-	.featuredProducts .slick-list {padding: 40px 25px 70px;}
+	.featuredProducts .slick-list, .promoProducts .slick-list {padding: 40px 25px 70px;}
 	.promoArea .slick-list {padding: 15px 25px 20px;}
+}
+.slick-prev:before, .slick-next:before,
+.slick-prev:after,.slick-prev:before{
+	color: #d46273;
+	font-size: 20px;
+	font-weight: 700;
+	display: inline-block;
+	transform: scale(1,1.5);
+	-webkit-transform: scale(1,1.5);
+	-moz-transform: scale(1,1.5);
+	-ms-transform: scale(1,1.5);
+	-o-transform: scale(1,1.5);
+}
+
+.slick-prev:before {
+	content: "<"!important;
+}
+
+.slick-next:before {
+	content: ">"!important;
 }
