@@ -15,10 +15,11 @@
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/app.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="slider-guide" data-height="45%"></div>
 <header>
 	<div class="navigation">
 		<div class="shadow ease"></div>
@@ -60,7 +61,7 @@
 		</div>
 		<div class="container">
 			<div class="row"><!-- NAVIGATION -->
-				<p class="logo">
+				<p class="logo container-attached">
 					<a href=""><img src="images/logo.png" alt="FUJIFILM INSTAX"></a>
 				</p>
 				<div class="social-media-block-sp">
@@ -74,6 +75,103 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="main-content clearfix">
+		<div class="home-slider-wrapper">
+			<div class="home-slider">
+<!--
+			<div>
+				<video controls autoplay>
+					<source src="video/video.mp4" type="video/mp4"></source>
+				</video>
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>xt10 camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+-->
+			<div>
+				<figure><iframe src="https://www.youtube.com/embed/i2oAKOmN8-Y" frameborder="0" allowfullscreen></iframe></figure>
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>xt10 camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+			<div>
+				<figure><iframe src="https://www.youtube.com/embed/gr1w14jKBzw" frameborder="0" allowfullscreen></iframe></figure>
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>xt10 camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+			<div>
+				<img src="images/slider/xt10.jpg" alt="">
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>xt10 camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+			<div>
+				<img src="images/slider/xa3.jpg" alt="">
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>xa3 camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+			<div>
+				<img src="images/slider/xt2.jpg" alt="">
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>xt2 camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+			<div>
+				<img src="images/slider/xpro2.jpg" alt="">
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>xpro2 camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+			<div>
+				<img src="images/slider/xt20.jpg" alt="">
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>xt20 camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+			<div>
+				<img src="images/slider/xt10.jpg" alt="">
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>xt10 camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+			<div>
+				<img src="images/slider/x100f.jpg" alt="">
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>x100f camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+			<div>
+				<img src="images/slider/gfx50s.jpg" alt="">
+				<div class="home-slider-txt">
+					<h2>fujifilm <span>gfx50s camera</span></h2>
+				</div>
+				<a class="home-slide-btn waves-effect waves-light grey darken-4 btn">read more</a>
+			</div>
+		</div>
+		<div class="home-thumbs-slider">
+			<div><img src="images/slider/xt10.jpg" alt=""></div>
+			<div><img src="images/slider/xa3.jpg" alt=""></div>
+			<div><img src="images/slider/xt2.jpg" alt=""></div>
+			<div><img src="images/slider/xpro2.jpg" alt=""></div>
+			<div><img src="images/slider/xt20.jpg" alt=""></div>
+			<div><img src="images/slider/xt10.jpg" alt=""></div>
+			<div><img src="images/slider/x100f.jpg" alt=""></div>
+			<div><img src="images/slider/gfx50s.jpg" alt=""></div>
+		</div>
+	</div>
 	</div>
 </header>
 <main class="clearfix">
@@ -578,7 +676,8 @@
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD20yknQIBFC6mKm0CmMDS-qBc1BNkx3OM"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
-<script src="http://s.codepen.io/assets/libs/modernizr.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<!--	<script src="http://s.codepen.io/assets/libs/modernizr.js"></script>-->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
