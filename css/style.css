@@ -9,12 +9,18 @@
 
 .slick-prev:before, .slick-next:before,
 .slick-prev:after,.slick-prev:before{
-	color: #d46273;
-	font-size: 20px;
+	color: #e6002e;
+	font-size: 24px;
 	font-weight: 700;
 	display: inline-block;
 	font-family: FontAwesome;
 }
+.home-thumbs-slider .slick-slide.slick-current,
+.home-thumbs-slider .slick-dots li.slick-active button:before {
+	background: #e6002e;
+}
+
+
 .slick-prev:before { content: "\f104"!important; }
 .slick-next:before { content: "\f105"!important; }
 button:focus{ background: none; }
@@ -58,6 +64,9 @@ main .promoProducts .slick-dots li button:before,
 	color: #2e3192;
 }
 
+.slick-dots li button:before{
+	opacity: 1;
+}
 
 
 
@@ -110,6 +119,13 @@ header .header-navigation-block{background-color: rgba(255, 255, 255, 0.7); posi
 .social-media-block{position: fixed; right: 14%; top: 10%; z-index: 98; transition: all 0.5s ease}
 .show-nav .logo{z-index: 101;}
 .showNav{top: 0;}
+
+.home-slide-btn a{
+	padding: 10px 20px;
+}
+.home-slide-btn{
+	bottom: 8%;
+}
 
 /**
 * --------------------------------------------------------------------------
@@ -259,11 +275,14 @@ main .slick-dots li button:before{content: ""; content: "\f096"; font-family: Fo
 	-ms-transform: rotate(45deg); /* IE 9 */
 	-webkit-transform: rotate(45deg); /* Safari */
 	transform: rotate(45deg);
+	top: 2px;
 }
-main .slick-dots li.slick-active button:before{content: "\f0c8"; font-family: FontAwesome; font-size: 15px; font-weight:700;
+main .slick-dots li.slick-active button:before{
+	content: "\f0c8"; font-family: FontAwesome; font-size: 15px; font-weight:700;
 	-ms-transform: rotate(45deg); /* IE 9 */
 	-webkit-transform: rotate(45deg); /* Safari */
 	transform: rotate(45deg);
+	top: 2px;
 }
 
 
@@ -418,7 +437,7 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 	width: 198px;
 }
 .hide-contents{ display: none }
-.footer .container{ padding: 30px 0; }
+.footer .container{ padding: 20px 0 7px; }
 .showSiteMapButton:before {
 	content: '\f107';
 	position: absolute;
@@ -444,7 +463,6 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 }
 
 .sitemap{
-	border-bottom: 1px solid #fff;
 	padding-bottom: 10px;
 	margin-bottom: 15px;
 }
@@ -455,6 +473,14 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 }
 .footer .container {
 	position: relative;
+}
+.copyRight{
+	position: relative;
+}
+footer .information-link-block {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 @media (min-width:600px) {
@@ -479,8 +505,8 @@ ul.sitemap li.col{
 
 .footer .social-media{text-align: center;
 position: absolute;
-right: 0;
-top: 10px;}
+right: 10px;
+top: 0;}
 .footer .social-media li{display: inline-block; font-size: 20px; margin: 0 5px; color: #fff;}
 .information-link-block li a,
 .footer .social-media li a{color: #fff;}

@@ -76,6 +76,7 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		adjustSlickButtons(".productSlider");
 		setHeightOfChildren(".event-content-main .event-list");
+		resetChildHeight($("ul.sitemap li.col"));
 	});
 
 //	elementRotation = means that the element is tranformed
@@ -149,6 +150,7 @@ $(document).ready(function(){
 		$(this).toggleClass("active");
 		$(".sitemap").slideToggle();
 		resetChildHeight($("ul.sitemap li.col"));
+		$('html,body').animate({scrollTop: $('html,body').height()}, 1000);
 	});
 	/***********************/
 });
