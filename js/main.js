@@ -70,11 +70,11 @@ $(document).ready(function(){
 
 
 	/* USE THIS for getting the position of the slick buttons */
-	adjustSlickButtons(".featuredProductSlider",0);
+	adjustSlickButtons(".productSlider",0);
 	adjustSlickButtons(".home-thumbs-slider",45);// means 45 degree rotation
 	setHeightOfChildren(".event-content-main .event-list");
 	$(window).resize(function(){
-		adjustSlickButtons(".featuredProductSlider");
+		adjustSlickButtons(".productSlider");
 		setHeightOfChildren(".event-content-main .event-list");
 	});
 

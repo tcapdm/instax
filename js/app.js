@@ -42,7 +42,7 @@
 			variableWidth: true
 		});
 
-		$('.featuredProductSlider').slick({
+		$('.productSlider').slick({
 			dots: true,
 			infinite: false,
 			speed: 300,
