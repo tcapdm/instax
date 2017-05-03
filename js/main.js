@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 
 	/* USE THIS for getting the position of the slick buttons */
-	adjustSlickButtons(".productSlider",0);
+	adjustSlickButtons(".productSlider",45);
 	adjustSlickButtons(".home-thumbs-slider",45);// means 45 degree rotation
 	setHeightOfChildren(".event-content-main .event-list");
 	$(window).resize(function(){
@@ -114,6 +114,20 @@ $(document).ready(function(){
 		});
 		$(parentChildSelector).css("height",height+"px");
 	}
+	
+	
+	function resetChildHeight(selector){
+		selector.css("height","auto");
+		$highestHeight = 0;
+		$(selector).each(function(){
+			console.log(selector.height());
+			if($highestHeight<selector.height()){
+				$highestHeight=selector.height();
+			}
+		});
+		selector.css("height",$highestHeight);
+
+	}
 
 	$(window).scroll(function(event){
 		didScroll = true;
@@ -133,7 +147,8 @@ $(document).ready(function(){
 	
 	$(".showSiteMapButton").click(function(){
 		$(this).toggleClass("active");
-		$(".sitemapLink").slideToggle();
+		$(".sitemap").slideToggle();
+		resetChildHeight($("ul.sitemap li.col"));
 	});
 	/***********************/
 });
