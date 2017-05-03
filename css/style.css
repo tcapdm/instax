@@ -633,6 +633,10 @@ top: 0;}
 }
 
 
-/* code updates */
-
+/* testing 
+problem here: team-instax
+header,footer,.featuredProducts,.where-to-buy,.promoArea,.events,.instax-film{
+	display: none;
+}
+*/
 
