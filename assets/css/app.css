@@ -49,7 +49,7 @@ a[class^="btn-"] {z-index:2;position: relative; display: block; overflow: hidden
 .btn-6.peach {background:rgba(228,149,144,0.3)}
 .btn-6.peach span {background-color: #e49590;}
 
-.btn-6.redd {background:rgba(233,122,128,0.3)}
+.btn-6.redd {background:rgba(233,122,128,0.75)}
 .btn-6.redd span {background-color: #e6002e;}
 
 

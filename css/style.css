@@ -134,6 +134,9 @@ header .header-navigation-block{background-color: rgba(255, 255, 255, 0.7); posi
 * MAIN
 * --------------------------------------------------------------------------
 */
+.home-thumbs-slider .slick-slide.slick-current{
+	background-color: #e6002e;
+}
 .main-content .slick-dots li.slick-active button:before{
 	top: 3px;
 	font-size: 12px;
