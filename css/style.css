@@ -465,16 +465,19 @@ top: 10px;}
 
 @media screen and (max-width: 600px) {
 	h2{font-size: 2.56rem;}
-	main h2 {margin: 44px 0 30px;}
+	main h2 {margin: 10px 0 30px;}
 	.navigation{position: fixed}
 	.find-now-btn {width: 100%;}
 	.promoArea .slick-list {padding: 15px 25px 20px;}
 	.instax-film{position: relative; padding-bottom: 60px;}
 	.footer .social-media{position: inherit;}
+	.instax-media {
+		margin-top: 20px;
+	}
 }
 
 @media screen and (max-width: 516px) {
-	.header-qoute{margin: 5px;}
+	.header-qoute{margin: 20px 5px 5px 5px;}
 	header .social-media li{margin-bottom: 5px;}
 	
 	.featuredProducts .productSlider .itemContainer:nth-child(4n+2) .custom-bg, .promoProducts .productSlider .itemContainer:nth-child(4n+2) .custom-bg{bottom: 20px;}
