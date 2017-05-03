@@ -475,6 +475,40 @@
 			$('.footer-subscribe-submit').trigger('click');
 		});
 
+		
+/**
+* --------------------------------------------------------------------------
+* FOOTER SUBMIT BUTTON
+* --------------------------------------------------------------------------
+*/
+	function sliderColorText(){
+		var brightness = 0;
+		//check first if it has image
+		
+		
+		if(!$(".slick-current .slick-active:has(img)")){
+			alert("no image");
+		}
+		else{
+			getImageBrightness($(".home-slider .slick-active img, .home-slider .slick-active video").attr('src'),function(brightness) {
+				if (brightness <= 150){
+					$('.home-slider-txt h2, .header-nav ul li a').css('color','#f7f7f7');
+					$('.header-logo a img').attr('src','/sites/all/themes/fuji_digital/images/logo-white.png');
+					$('.home-thumbs-slider button').removeClass('button-black');
+				} else {
+					$('.home-slider-txt h2, .header-nav ul li a').css('color','#242424');
+					$('.header-logo a img').attr('src','/sites/all/themes/fuji_digital/images/logo-dark.png');
+					$('.home-thumbs-slider button').addClass('button-black');
+				}
+			});
+		}
+	}
+
+	$('.home-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+		sliderColorText();
+	});
+
+		
 /**
 *--------------------------------------------------------------------------
 * JEMUEL CODES
