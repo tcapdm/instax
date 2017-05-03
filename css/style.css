@@ -456,7 +456,7 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 .hide-contents{ display: none }
 .footer .container{ padding: 20px 0 7px; }
 .showSiteMapButton:before {
-	content: '\f107';
+	content: '\f106';
 	position: absolute;
 	/*	transform: translateX(0%) rotateZ(90deg);*/
 	font-family: FontAwesome;
