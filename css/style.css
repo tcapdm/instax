@@ -261,7 +261,7 @@ input.search-by-location::placeholder {color: #f7f7f7; }
 * --------------------------------------------------------------------------
 */
 
-.events {background:url(../images/backgrounds/bg4.jpg)no-repeat center center;background-size:cover;padding:30px 0}
+.events {background:url(../images/backgrounds/bg4.jpg)no-repeat center center;background-size:cover;}
 .event-title {font-size:16px; font-weight: 900; text-transform: uppercase}
 .event-content-main {overflow: hidden; margin: 60px 0 50px 0}
 .event-main-img {overflow: hidden; position: relative;}
@@ -326,7 +326,7 @@ input.search-by-location::placeholder {color: #f7f7f7; }
 .instax-film img{width: 100%; display: block;}
 
 
-@media screen and (max-width: 1200px) {.media-card-text{width: 30%;}}
+@media screen and (max-width: 1200px) {.media-card-text{ padding: 5px 15px; }}
 @media screen and (max-width: 992px) {.social-media-block {right: 7%;}
 .find-now-btn {margin: 15px 0;}
 .find-now-btn{margin-top: 0;}}
@@ -404,7 +404,9 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 .showSiteMapButton.active:before {
 	transform: translateX(0%) rotateZ(-180deg);
 }
-
+.footer .container {
+	position: relative;
+}
 
 @media (min-width:600px) {
 	.sectionHeaderBlock {position: absolute;top: 50%;-webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
@@ -420,7 +422,10 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 .sitemap a{color: #fff;}
 .sitemapLink{text-indent: 5px; margin-top: 0; font-family: 'Handlee', cursive;}
 .sitemap h3 {margin: 0; font-size: 18px; font-weight: 700; font-family: 'Handlee', cursive;}
-.footer .social-media{text-align: center;}
+.footer .social-media{text-align: center;
+position: absolute;
+right: 0;
+top: 10px;}
 .footer .social-media li{display: inline-block; font-size: 20px; margin: 0 5px; color: #fff;}
 .footer .social-media li a{color: #fff;}
 
@@ -465,16 +470,20 @@ ul.footer-links-icon-list li a {padding: 10px; text-transform: uppercase; letter
 	.find-now-btn {width: 100%;}
 	.promoArea .slick-list {padding: 15px 25px 20px;}
 	.instax-film{position: relative; padding-bottom: 60px;}
+	.footer .social-media{position: inherit;}
 }
 
 @media screen and (max-width: 516px) {
 	.header-qoute{margin: 5px;}
 	header .social-media li{margin-bottom: 5px;}
+	
 	.featuredProducts .productSlider .itemContainer:nth-child(4n+2) .custom-bg, .promoProducts .productSlider .itemContainer:nth-child(4n+2) .custom-bg{bottom: 20px;}
 	.featuredProducts .productSlider .itemContainer:nth-child(4n+4) .custom-bg, .promoProducts .productSlider .itemContainer:nth-child(4n+4) .custom-bg{bottom: 20px;}
 	.featuredProducts .productSlider .itemContainer:nth-child(4n+1) .custom-bg, .promoProducts .productSlider .itemContainer:nth-child(4n+1) .custom-bg{top: 20px;}
 	.featuredProducts .productSlider .itemContainer:nth-child(4n+2) .custom-bg, .promoProducts .productSlider .itemContainer:nth-child(4n+2) .custom-bg{top: 20px;}
 }
+
+
 
 @media screen and (max-width: 400px){
 	h2{font-size: 2rem;}
