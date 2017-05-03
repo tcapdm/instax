@@ -71,7 +71,7 @@ $(document).ready(function(){
 
 	/* USE THIS for getting the position of the slick buttons */
 	adjustSlickButtons(".productSlider",45);
-	adjustSlickButtons(".home-thumbs-slider",45);// means 45 degree rotation
+//	adjustSlickButtons(".home-thumbs-slider",45);// means 45 degree rotation
 	setHeightOfChildren(".event-content-main .event-list");
 	$(window).resize(function(){
 		adjustSlickButtons(".productSlider");
@@ -87,6 +87,7 @@ $(document).ready(function(){
 		var positioningValue = 0;
 		var widthPercentageOfhalfContainer = 50;// means 50%;
 //		console.log(listDots);
+		console.log("nag resize");
 		$(elementName+" .slick-dots li").each(function(){
 			if(elementRotation!=0){
 //				slickDotsWidthSummation += $(this).width()/Math.sin(elementRotation);

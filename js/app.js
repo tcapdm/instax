@@ -484,8 +484,6 @@
 	function sliderColorText(){
 		var brightness = 0;
 		//check first if it has image
-		
-		
 		if(!$(".slick-current .slick-active:has(img)")){
 			alert("no image");
 		}
@@ -504,9 +502,9 @@
 		}
 	}
 
-	$('.home-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-		sliderColorText();
-	});
+//	$('.home-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+//		sliderColorText();
+//	});
 
 		
 /**

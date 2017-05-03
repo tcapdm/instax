@@ -129,7 +129,8 @@ header .header-navigation-block{background-color: rgba(255, 255, 255, 0.7); posi
 	bottom: 8%;
 }
 .home-slider-txt h2{
-	color: #f7f7f7;
+	color: #b71d3e;
+	text-align: left;
 }
 
 /**
@@ -151,6 +152,10 @@ header .header-navigation-block{background-color: rgba(255, 255, 255, 0.7); posi
 }
 .main-content .slick-dots li{
 	margin: 0;
+}
+
+.main-content .slick-prev.slick-disabled:before, .main-content .slick-next.slick-disabled:before {
+	opacity: 1;
 }
 
 main h2{font-size: 3rem;font-family: 'Pacifico', cursive; text-align: center; margin: 2% 0;}
