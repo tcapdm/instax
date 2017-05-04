@@ -647,4 +647,31 @@ header,footer,.featuredProducts,.where-to-buy,.promoArea,.events,.instax-film{
 	display: none;
 }
 */
+.promoProducts .productSlider .itemContainer:nth-child(4n+1) button.view{
+	background-color: #e65d6d;
+}
+.promoProducts .productSlider .itemContainer:nth-child(4n+2) button.view{
+	background-color: #2f3293;
+}
+.promoProducts .productSlider .itemContainer:nth-child(4n+3) button.view{
+	background-color: #f89576;
+}
+.promoProducts .productSlider .itemContainer:nth-child(4n+4) button.view{
+	background-color: #a862a8;
+}
+
+
+
+button.view{
+	padding: 6px 15px;
+	background-color: #fff;
+	width: 120px;
+	margin: 10px auto;
+	border: 0;
+	color: #fff;
+	font-size: 15px;
+}
+
+
+
 

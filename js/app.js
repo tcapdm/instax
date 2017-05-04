@@ -173,69 +173,24 @@
 * SLIDER
 * --------------------------------------------------------------------------
 */
-
-		var autoPlay = function(media, option) {
-			if ( new RegExp('iframe').test(media.selector) )
-			{
-				media.each(function(i, item){
-					var src = $(item).attr('src');
-					if(option === 'play') {
-						$(item).attr('src', src + '&autoplay=1');
-					} else {
-						$(item).attr('src', src.replace('&autoplay=1', ''));
-					}
-				});
-			}
-			else
-			{
-				media.each(function(i, item){
-					item.currentTime = 0;
-					if(option === 'play') {
-						$(item).get(0).play();
-					} else {
-						$(item).get(0).pause();
-					}
-				});
-			}
-
-		}
-
+		//jemuel codes
 		$('.home-slider').on('afterChange swipe', function(){
-			var iframes = $('.home-slider .slick-track .slick-current').find('iframe');
-			var videos = $('.home-slider .slick-track .slick-current').find('video');
-			autoPlay(iframes, 'play');
-			autoPlay(videos, 'play');
-		});
-
-		$('.home-slider').on('beforeChange', function() {
 			var iframes = $('.home-slider .slick-track .slick-slide').find('iframe');
-			var videos = $('.home-slider .slick-track .slick-slide').find('video');
-			autoPlay(iframes, 'remove');
-			autoPlay(videos, 'remove');
-		})
-
-		var iframes = $('.home-slider .slick-track .slick-slide').find('iframe');
+			$(iframes).each(function(i, item){
+				var src = $(item).attr('src').replace('?rel=0&fs=1&autoplay=1','');
+				$(item).attr('src', src);
+			});
+			var current = $('.home-slider .slick-track .slick-slide.slick-current').find('iframe');
+			var src = $(current).attr('src');
+			$(current).attr('src', src + '?rel=0&fs=1&autoplay=1');
+		});
+		
+		var iframes = $('.home-slider .slick-track .slick-slide.slick-current').find('iframe');
 		$(iframes).each(function(i, item){
-			var ctr = i;
 			var src = $(item).attr('src');
 			$(item).attr('src', src + '?rel=0&fs=1&autoplay=1');
-			var h = (winHeight * .18) + winHeight;
-			var newHeight = (winHeight / $(item).width()) * $(item).height();
 		});
-
-		// $(".home-slider").on("DOMSubtreeModified",function(){
-		// 	$(this).find('iframe').one('load', function(){
-		// 		var cssLink = document.createElement("link");
-		// 		cssLink.href = "../assets/css/style.css";  
-		// 		cssLink.rel = "stylesheet";  
-		// 		cssLink.type = "text/css";
-		// 		$(this).contents().find("head").append(cssLink);
-		// 	});
-		// });
-		
-		
-
-		/**
+/**
 * --------------------------------------------------------------------------
 * SEARCH
 * --------------------------------------------------------------------------

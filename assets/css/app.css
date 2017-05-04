@@ -62,7 +62,7 @@ a[class^="btn-"] {z-index:2;position: relative; display: block; overflow: hidden
 .main-content{
 	overflow: hidden;
 }
-.home-slider figure:after,
+/*.home-slider figure:after,*/
 .home-slider img:after{
 	content: "";opacity:0.1;z-index:8;
 	position: absolute;
@@ -219,3 +219,12 @@ a[class^="btn-"] {z-index:2;position: relative; display: block; overflow: hidden
 
 
 .slider-guide {width: 100%;min-height: 700px;position: absolute;z-index:-999;}
+
+
+
+
+
+
+
+
+
