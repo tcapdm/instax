@@ -62,7 +62,8 @@ a[class^="btn-"] {z-index:2;position: relative; display: block; overflow: hidden
 .main-content{
 	overflow: hidden;
 }
-.home-slider:after{
+.home-slider figure:after,
+.home-slider img:after{
 	content: "";opacity:0.1;z-index:8;
 	position: absolute;
 	top: 0;bottom: 0;right: 0;left: 0;
