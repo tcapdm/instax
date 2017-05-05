@@ -172,7 +172,7 @@
 * --------------------------------------------------------------------------
 * SLIDER
 * --------------------------------------------------------------------------
-*/
+*
 		//jemuel codes
 		$('.home-slider').on('afterChange swipe', function(){
 			var iframes = $('.home-slider .slick-track .slick-slide').find('iframe');
@@ -508,6 +508,12 @@
 			removeAddedBodyClass();
 			removeShadow();
 		});
+		$('.close-button').on("click", function(){
+			removeAddedBodyClass();
+			removeShadow();
+		});
+		
+		
 		function removeShadow(){
 			$('.shadow').fadeOut();
 			$('body').animate({'left':0},400);

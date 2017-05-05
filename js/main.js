@@ -153,19 +153,5 @@ $(document).ready(function(){
 		resetChildHeight($("ul.sitemap li.col"));
 		$('html,body').animate({scrollTop: $('html,body').height()}, 1000);
 	});
-	/***********************/
-
-	$('.productSlider .itemContainer').hover(function(){
-		$(this).children(".view").addClass('animated swing');
-	},function(){
-		$(this).children(".view").removeClass('animated swing');
-	});
-	
-	
-	$('.instax-media li').hover(function(){
-		$(this).addClass('animated swing');
-	},function(){
-		$(this).removeClass('animated swing');
-	});
 	
 });
