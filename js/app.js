@@ -172,7 +172,7 @@
 * --------------------------------------------------------------------------
 * SLIDER
 * --------------------------------------------------------------------------
-*
+*/
 		//jemuel codes
 		$('.home-slider').on('afterChange swipe', function(){
 			var iframes = $('.home-slider .slick-track .slick-slide').find('iframe');
