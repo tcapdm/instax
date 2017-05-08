@@ -124,8 +124,7 @@ header .header-navigation-block{background-color: rgba(255, 255, 255, 0.7); posi
 	position: relative;
 }
 
-
-.header-secondary-links{
+.headerContainer ul ul{
 	/*transition: all 0.5s ease;*/
     /*position: absolute;*/
     background-color: rgba(255, 255, 255, 0.7);
@@ -142,10 +141,10 @@ header .header-navigation-block{background-color: rgba(255, 255, 255, 0.7); posi
 	box-shadow: 0px 0px 5px 0px rgba(181,179,181,0.75);
 }
 /*
-.open .header-secondary-links{
+.open .headerContainer ul ul{
 	display: block;
 }*/
-.header-secondary-links > li{
+.headerContainer ul ul > li{
 	display: block;
     padding: 3px 20px 3px 10px;
     border-top: 1px solid #f9f9f9;
@@ -153,7 +152,7 @@ header .header-navigation-block{background-color: rgba(255, 255, 255, 0.7); posi
     margin: 0;
 }
 
-.header-secondary-links > li:first-child{
+.headerContainer ul ul > li:first-child{
     border-top: 0;
 }
 button.view{
@@ -718,7 +717,7 @@ top: 0;}
 		background-color: #000;
 	}
 
-	.header-links li:hover .header-secondary-links{
+	.header-links li:hover ul{
     	display: block;
 		position: absolute;
 
@@ -730,7 +729,7 @@ top: 0;}
 		margin: 4px 2%;
 	}
 	header .header-navigation-block {left: 0; z-index: 100;}
-	.header-secondary-links{
+	.headerContainer ul ul{
 		position: initial;
 	}
 	.show-submenu{
@@ -739,13 +738,13 @@ top: 0;}
 	    color: #fff;
 	    top: 1px;
 	}
-	.header-secondary-links.whiteBGC{
+	.headerContainer ul ul.whiteBGC{
 		    background: #222;
 	}
-	.header-secondary-links > li {
+	.headerContainer ul ul > li {
 	    border-top: 0;	
 	}
-	.open .header-secondary-links{
+	.open .headerContainer ul ul{
 		height: auto;
 	}
 
@@ -783,7 +782,7 @@ top: 0;}
 	.footer-links {padding-bottom: 10px; border-bottom: 0;}
 	ul.footer-links-text-list li{display: block;}
 
-.header-secondary-links {
+.headerContainer ul ul {
     overflow: hidden;
     top: 36px;
     padding: 0; 
@@ -795,7 +794,7 @@ top: 0;}
     box-shadow: none; 
     background-color: #222; 
 }
-.header-secondary-links > li{
+.headerContainer ul ul > li{
 	text-align: left;
 }
 
