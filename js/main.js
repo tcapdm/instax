@@ -60,9 +60,11 @@ $(document).ready(function(){
 			}
 			if(distance<0){//means wala ka na sa header
 				$('.header-navigation-block').addClass("whiteBGC");
+				$('.header-secondary-links').addClass("whiteBGC");
 			}
 			else{
 				$('.header-navigation-block').removeClass("whiteBGC");
+				$('.header-secondary-links').removeClass("whiteBGC");
 			}
 		}
 		lastScrollTop = st;
@@ -154,4 +156,15 @@ $(document).ready(function(){
 		$('html,body').animate({scrollTop: $('html,body').height()}, 1000);
 	});
 	
+	$('.show-submenu').on('click', function(){
+		if($(this).siblings(".header-secondary-links").hasClass('open')){
+			$(".header-links .header-secondary-links.open").removeClass('open').slideToggle(200);
+		}
+		else{
+			$(".header-links .header-secondary-links.open").removeClass('open').slideToggle(200);
+			$(this).siblings(".header-secondary-links").addClass("open").slideToggle(200);
+		}
+	});
+
+
 });

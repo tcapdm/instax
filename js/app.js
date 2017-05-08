@@ -190,6 +190,13 @@
 			var src = $(item).attr('src');
 			$(item).attr('src', src + '?rel=0&fs=1&autoplay=1');
 		});
+
+
+		var sliderNavigationButtons = $(".home-thumbs-slider .slick-dots").width();
+		var sliderNavigationButtonDistance = parseInt($(".home-thumbs-slider .slick-dots").css("left").replace('px',''));
+		var rightButtonDistance = sliderNavigationButtons + sliderNavigationButtonDistance+10;//+10 para pumantay
+		$('.home-thumbs-slider .slick-next').css('left',rightButtonDistance);
+
 /**
 * --------------------------------------------------------------------------
 * SEARCH
