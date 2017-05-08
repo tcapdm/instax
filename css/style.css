@@ -836,9 +836,21 @@ top: 0;}
 	.event-sub-title {
 		font-size: 12px;
 	}
-	
+	.product-frame01 .imgContainer:before {
+	    bottom: 0px;
+	}
+	.product-frame01 .imgContainer:after {
+	    top: 0px;
+	}
 }
-
+@media screen and (max-width: 420px){
+	.product-frame01 .imgContainer:before {
+	    bottom: 140px;
+	}
+	.product-frame01 .imgContainer:after {
+	    top: 130px;
+	}
+}
 
 
 @media screen and (max-width: 400px){
@@ -858,6 +870,13 @@ top: 0;}
 	.sitemap h3 {
 		font-size: 16px;
 	}
+	.product-frame01 .imgContainer:before {
+	    bottom: 19%;
+	}
+	.product-frame01 .imgContainer:after {
+	    top: 20%;
+	}
+	
 }
 
 

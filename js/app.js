@@ -88,7 +88,7 @@
 					}
 				},
 				{
-					breakpoint: 552,
+					breakpoint: 420,
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1
