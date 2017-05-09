@@ -712,15 +712,14 @@ top: 0;}
 .information-link-block li:last-child{
 	margin-right: 0;
 }
+
+.header-links li > ul{
+		position: absolute;
+
+	}
 @media screen and (min-width: 806px) {
 	.header-navigation-block .whiteBGC{
 		background-color: #000;
-	}
-
-	.header-links li:hover ul{
-    	display: block;
-		position: absolute;
-
 	}
 }
 
@@ -739,7 +738,7 @@ top: 0;}
 	    top: 1px;
 	}
 	.headerContainer ul ul.whiteBGC{
-		    background: #222;
+		    background-color: #222!important;
 	}
 	.headerContainer ul ul > li {
 	    border-top: 0;	

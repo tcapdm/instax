@@ -293,9 +293,17 @@
 * EVENTS
 * --------------------------------------------------------------------------
 */
-
+		var forMobile = false;
+		
 		$(window).resize(function(){
 			updateOnResize();
+			// if($(window).width()<806){
+			// 	if(!forMobile){ 
+			// 		$('.header-links ul ul').removeAttr('style');
+			// 		forMobile = true;
+			// 	}
+			// }
+			// else{ forMobile = false; }
 		});
 
 		$(window).scroll(function(event){
