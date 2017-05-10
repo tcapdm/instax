@@ -912,60 +912,60 @@ ul.sitemap li.col{
 
 @-webkit-keyframes rotateStyledShadow1 {
 	0%   {left: 20px; top: 30px;}
-	25%  {left: 20px; top: -30px;}
-	50%  {left: -20px; top: -30px;}
-	75%  {left: -20px; top: 30px;}
+	25%  {left: 20px; top: 25px;}
+	50%  {left: 16px; top: 25px;}
+	75%  {left: 16px; top: 30px;}
 	
 }
 @keyframes rotateStyledShadow1 {
 	0%   {left: 20px; top: 30px;}
-	25%  {left: 20px; top: -30px;}
-	50%  {left: -20px; top: -30px;}
-	75%  {left: -20px; top: 30px;}
+	25%  {left: 20px; top: 25px;}
+	50%  {left: 16px; top: 25px;}
+	75%  {left: 16px; top: 30px;}
 }
 
 
 @-webkit-keyframes rotateStyledShadow2 {
 	0%   {right: 20px; bottom: 30px;}
-	25%  {right: 20px; bottom: -30px;}
-	50%  {right: -20px; bottom: -30px;}
-	75%  {right: -20px; bottom: 30px;}
+	25%  {right: 20px; bottom: 25px;}
+	50%  {right: 16px; bottom: 25px;}
+	75%  {right: 16px; bottom: 30px;}
 	
 }
 @keyframes rotateStyledShadow2 {
 	0%   {right: 20px; bottom: 30px;}
-	25%  {right: 20px; bottom: -30px;}
-	50%  {right: -20px; bottom: -30px;}
-	75%  {right: -20px; bottom: 30px;}
+	25%  {right: 20px; bottom: 25px;}
+	50%  {right: 16px; bottom: 25px;}
+	75%  {right: 16px; bottom: 30px;}
 }
 
 
 @-webkit-keyframes rotateStyledShadow3{
 	0%   {right: 20px; top: 30px;}
-	25%  {right: 20px; top: -30px;}
-	50%  {right: -20px; top: -30px;}
-	75%  {right: -20px; top: 30px;}
+	25%  {right: 20px; top: 25px;}
+	50%  {right: 16px; top: 25px;}
+	75%  {right: 16px; top: 30px;}
 	
 }
 @keyframes rotateStyledShadow3 {
 	0%   {right: 20px; top: 30px;}
-	25%  {right: 20px; top: -30px;}
-	50%  {right: -20px; top: -30px;}
-	75%  {right: -20px; top: 30px;}
+	25%  {right: 20px; top: 25px;}
+	50%  {right: 16px; top: 25px;}
+	75%  {right: 16px; top: 30px;}
 }
 
 
 @-webkit-keyframes rotateStyledShadow4 {
 	0%   {left: 20px; bottom: 30px;}
-	25%  {left: 20px; bottom: -30px;}
-	50%  {left: -20px; bottom: -30px;}
-	75%  {left: -20px; bottom: 30px;}
+	25%  {left: 20px; bottom: 25px;}
+	50%  {left: 16px; bottom: 25px;}
+	75%  {left: 16px; bottom: 30px;}
 	
 }
 @keyframes rotateStyledShadow4 {
 	0%   {left: 20px; bottom: 30px;}
-	25%  {left: 20px; bottom: -30px;}
-	50%  {left: -20px; bottom: -30px;}
-	75%  {left: -20px; bottom: 30px;}
+	25%  {left: 20px; bottom: 25px;}
+	50%  {left: 16px; bottom: 25px;}
+	75%  {left: 16px; bottom: 30px;}
 }
 
