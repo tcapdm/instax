@@ -534,12 +534,5 @@
 			}
 
 		}
-
-	
-		
-
-		
 	});
-	// $('.sliderVideo').addClassName('withborder');
-
 })(jQuery, window, document);

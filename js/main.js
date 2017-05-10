@@ -206,6 +206,8 @@ $(document).ready(function(){
 	
 	$(window).resize(function(){
 		if($(this).width()<805){
+			$(".header-links li i.fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
+			$(".header-links li ul").slideUp(200);
 			if(!forMobile){
 				$(".header-links li ul").removeAttr("style");
 				forMobile = true;
